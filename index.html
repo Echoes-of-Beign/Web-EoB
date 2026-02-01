@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes of Beign - Choose Your Journey</title>
+    <link rel="stylesheet" href="styles-gate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Canvas humo de fondo -->
+    <canvas id="smokeCanvas"></canvas>
+
+    <!-- Logo central superior -->
+    <div class="central-logo">
+        <img src="images/logo.png" alt="Echoes of Beign">
+        <p class="logo-tagline">Choose Your Journey</p>
+    </div>
+
+    <!-- Contenedor principal split-screen -->
+    <div class="gate-container">
+        
+        <!-- Vol.1 - The Descent (IZQUIERDA) -->
+        <a href="vol1.html" class="volume-side vol1-side" data-volume="1">
+            <!-- Capas parallax -->
+            <div class="parallax-layer layer-back"></div>
+            <div class="parallax-layer layer-mid"></div>
+            <div class="parallax-layer layer-front"></div>
+            <div class="volume-overlay"></div>
+            
+            <!-- Partículas -->
+            <div class="particles" id="particles-vol1"></div>
+            
+            <!-- Contenido -->
+            <div class="volume-content">
+                <div class="volume-number">Vol.1</div>
+                <div class="volume-title">
+                    <span class="title-emotions">EMOTIONS</span>
+                    <span class="title-line">THE</span>
+                    <span class="title-line main">DESCENT</span>
+                </div>
+                <div class="volume-subtitle">19 Tracks into Darkness</div>
+                <button class="volume-cta">Enter the Abyss</button>
+            </div>
+        </a>
+
+        <!-- Vol.2 - The Ascent (DERECHA) -->
+        <a href="vol2.html" class="volume-side vol2-side" data-volume="2">
+            <!-- Capas parallax -->
+            <div class="parallax-layer layer-back"></div>
+            <div class="parallax-layer layer-mid"></div>
+            <div class="parallax-layer layer-front"></div>
+            <div class="volume-overlay"></div>
+            
+            <!-- Partículas -->
+            <div class="particles" id="particles-vol2"></div>
+            
+            <!-- Contenido -->
+            <div class="volume-content">
+                <div class="volume-number">Vol.2</div>
+                <div class="volume-title">
+                    <span class="title-emotions">EMOTIONS</span>
+                    <span class="title-line">THE</span>
+                    <span class="title-line main">ASCENT</span>
+                </div>
+                <div class="volume-subtitle">19 Tracks into Light</div>
+                <button class="volume-cta">Embrace the Dawn</button>
+            </div>
+        </a>
+
+    </div>
+
+    <script src="gate.js"></script>
+</body>
+</html>

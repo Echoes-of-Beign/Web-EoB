@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes of Beign - Vol.1 The Descent</title>
+    <link rel="stylesheet" href="styles-vol.css">
+</head>
+<body class="vol1-theme">
+    
+    <!-- Canvas efectos de fondo -->
+    <canvas id="bgCanvas"></canvas>
+    
+    <!-- Navegación flotante -->
+    <nav class="floating-nav">
+        <div class="nav-logo">
+            <img src="images/logo.png" alt="Echoes of Beign">
+        </div>
+        <div class="nav-links">
+            <a href="#hero" class="nav-link active">Home</a>
+            <a href="#concept" class="nav-link">Concept</a>
+            <a href="#tracklist" class="nav-link">Tracklist</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#singles" class="nav-link">Singles</a>
+            <a href="#merch" class="nav-link">Merch</a>
+        </div>
+        <a href="vol2.html" class="volume-switch">
+            <span>Switch to</span>
+            <strong>Vol.2 Ascent</strong>
+        </a>
+    </nav>
+    
+    <!-- Contenedor fullpage -->
+    <div class="fullpage-container">
+        
+        <!-- ==================== SECCIÓN 1: HERO ==================== -->
+        <section id="hero" class="fullpage-section hero-section">
+            
+            <!-- Capas de parallax -->
+            <div class="parallax-bg layer-1"></div>
+            <div class="parallax-bg layer-2"></div>
+            <div class="parallax-bg layer-3"></div>
+            
+            <!-- Portada del álbum -->
+            <div class="album-cover-hero">
+                <img src="images/vol1-cover.png" alt="Vol.1 The Descent">
+            </div>
+            
+            <!-- Contenido hero -->
+            <div class="hero-content">
+                <div class="hero-subtitle">Echoes of Beign</div>
+                <h1 class="hero-title">
+                    <span class="title-vol">VOL.1</span>
+                    <span class="title-main">THE DESCENT</span>
+                </h1>
+                <p class="hero-tagline">19 Tracks into the Abyss</p>
+                <div class="hero-cta">
+                    <a href="#tracklist" class="btn-primary">Explore Tracklist</a>
+                    <a href="https://open.spotify.com/artist/YOUR_ARTIST_ID" target="_blank" class="btn-secondary">Listen on Spotify</a>
+                </div>
+            </div>
+            
+            <!-- Scroll indicator -->
+            <div class="scroll-indicator">
+                <span>Scroll to descend</span>
+                <div class="scroll-arrow"></div>
+            </div>
+            
+        </section>
+        
+        <!-- ==================== SECCIÓN 2: CONCEPT ==================== -->
+        <section id="concept" class="fullpage-section concept-section">
+            
+            <!-- Capas parallax -->
+            <div class="parallax-bg layer-1"></div>
+            <div class="parallax-bg layer-2"></div>
+            
+            <!-- Contenido -->
+            <div class="concept-content">
+                <div class="concept-visual">
+                    <div class="visual-element"></div>
+                </div>
+                
+                <div class="concept-text">
+                    <h2 class="section-title">
+                        <span class="title-small">The Journey</span>
+                        <span class="title-big">Into Darkness</span>
+                    </h2>
+                    
+                    <div class="concept-description">
+                        <p><strong>Emotions Vol. 1 – The Descent</strong> is a brutal reflection of the inner struggle. A sonic journey exploring solitude, shame, hate, and failure until reaching complete despair.</p>
+                        
+                        <p>This album is not a simple collection of songs; it is a <strong>conceptual narrative</strong> that traces the emotional descent into hopelessness, combining profound lyrics, cinematic atmospheres, and overwhelming instrumental force.</p>
+                        
+                        <p>Each track represents a <strong>negative emotion</strong> that drags the protagonist into a progressive process of internal degradation.</p>
+                    </div>
+                    
+                    <div class="concept-acts">
+                        <div class="act">
+                            <h3>Act I: The Awakening</h3>
+                            <p>Cracks appear in emotional stability</p>
+                        </div>
+                        <div class="act">
+                            <h3>Act II: The Conflict</h3>
+                            <p>The mind enters war with itself</p>
+                        </div>
+                        <div class="act">
+                            <h3>Act III: The Fall</h3>
+                            <p>The emotional structure collapses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+        <!-- ==================== SECCIÓN 3: TRACKLIST ==================== -->
+        <section id="tracklist" class="fullpage-section tracklist-section">
+            
+            <!-- Capas parallax -->
+            <div class="parallax-bg layer-1"></div>
+            <div class="parallax-bg layer-2"></div>
+            
+            <!-- Título de sección -->
+            <div class="tracklist-header">
+                <h2 class="section-title">
+                    <span class="title-small">Complete</span>
+                    <span class="title-big">Tracklist</span>
+                </h2>
+            </div>
+            
+            <!-- Lista de tracks (scroll vertical dentro de la sección) -->
+            <div class="tracklist-container">
+                
+                <!-- Track 00 -->
+                <div class="track-item" data-track="00">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-00.jpg" alt="Before the First Echo">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">00</div>
+                        <h3 class="track-title">Before the First Echo</h3>
+                        <p class="track-duration">1:25</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+                <!-- Track 01 -->
+                <div class="track-item" data-track="01">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-01.jpg" alt="Solitude">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">01</div>
+                        <h3 class="track-title">Solitude – The Empty Embrace</h3>
+                        <p class="track-duration">4:48</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+                <!-- Track 02 -->
+                <div class="track-item" data-track="02">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-02.jpg" alt="Shame">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">02</div>
+                        <h3 class="track-title">Shame – She Knows Me</h3>
+                        <p class="track-duration">4:06</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+                <!-- Track 03 -->
+                <div class="track-item" data-track="03">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-03.jpg" alt="Guilt">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">03</div>
+                        <h3 class="track-title">Guilt – Weigh on Me</h3>
+                        <p class="track-duration">5:54</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+                <!-- Track 04 -->
+                <div class="track-item" data-track="04">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-04.jpg" alt="Doubt">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">04</div>
+                        <h3 class="track-title">Doubt – The Flickerin Veil</h3>
+                        <p class="track-duration">4:17</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+                <!-- Track 05 -->
+                <div class="track-item" data-track="05">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-05.jpg" alt="Apathy">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">05</div>
+                        <h3 class="track-title">Apathy – All the Grey Hours</h3>
+                        <p class="track-duration">6:50</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+                <!-- Track 06 -->
+                <div class="track-item" data-track="06">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-06.jpg" alt="Disgust">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">06</div>
+                        <h3 class="track-title">Disgust – My Bitter Skin</h3>
+                        <p class="track-duration">3:33</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+                <!-- Track 07 -->
+                <div class="track-item" data-track="07">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-07.jpg" alt="Ruin Begins Within">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">07</div>
+                        <h3 class="track-title">Ruin Begins Within</h3>
+                        <p class="track-duration">5:12</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+                <!-- Track 08 -->
+                <div class="track-item" data-track="08">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-08.jpg" alt="Jealousy">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">08</div>
+                        <h3 class="track-title">Jealousy – The Crimson Spiral</h3>
+                        <p class="track-duration">4:45</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+                <!-- Track 09 -->
+                <div class="track-item" data-track="09">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-09.jpg" alt="Envy">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">09</div>
+                        <h3 class="track-title">Envy – Hollow Eyes</h3>
+                        <p class="track-duration">4:28</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+                <!-- Track 10 -->
+                <div class="track-item" data-track="10">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-10.jpg" alt="Anxiety">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">10</div>
+                        <h3 class="track-title">Anxiety – Yet, Now, Now, Why</h3>
+                        <p class="track-duration">5:03</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+                <!-- Track 11 -->
+                <div class="track-item" data-track="11">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-11.jpg" alt="Fear">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">11</div>
+                        <h3 class="track-title">Fear – The Hollow Pulse</h3>
+                        <p class="track-duration">4:52</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+                <!-- Track 12 -->
+                <div class="track-item" data-track="12">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-12.jpg" alt="Rage">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">12</div>
+                        <h3 class="track-title">Rage – My Sweet Evil Pet</h3>
+                        <p class="track-duration">5:21</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+                <!-- Track 13 -->
+                <div class="track-item" data-track="13">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-13.jpg" alt="Hate">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">13</div>
+                        <h3 class="track-title">Hate – The Poison I Became</h3>
+                        <p class="track-duration">6:15</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+                <!-- Track 14 -->
+                <div class="track-item" data-track="14">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-14.jpg" alt="The Prelude to the Ruin">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">14</div>
+                        <h3 class="track-title">The Prelude to the Ruin</h3>
+                        <p class="track-duration">3:47</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+                <!-- Track 15 -->
+                <div class="track-item" data-track="15">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-15.jpg" alt="Sadness">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">15</div>
+                        <h3 class="track-title">Sadness – In Her Silence Wake</h3>
+                        <p class="track-duration">5:38</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+                <!-- Track 16 -->
+                <div class="track-item" data-track="16">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-16.jpg" alt="Melancholy">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">16</div>
+                        <h3 class="track-title">Melancholy – Where Hope Pretended</h3>
+                        <p class="track-duration">6:02</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+                <!-- Track 17 -->
+                <div class="track-item" data-track="17">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-17.jpg" alt="Despair">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">17</div>
+                        <h3 class="track-title">Despair – The Very Last Echo</h3>
+                        <p class="track-duration">7:12</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+                <!-- Track 18 -->
+                <div class="track-item" data-track="18">
+                    <div class="track-cover">
+                        <img src="images/vol1/track-18.jpg" alt="Resignation">
+                    </div>
+                    <div class="track-info">
+                        <div class="track-number">18</div>
+                        <h3 class="track-title">Resignation – The Cradle of Silence</h3>
+                        <p class="track-duration">8:45</p>
+                    </div>
+                    <div class="track-play">▶</div>
+                </div>
+                
+            </div>
+            
+        </section>
+        
+        <!-- ==================== SECCIÓN 4: ABOUT ==================== -->
+        <section id="about" class="fullpage-section about-section">
+            
+            <!-- Capas parallax -->
+            <div class="parallax-bg layer-1"></div>
+            <div class="parallax-bg layer-2"></div>
+            
+            <!-- Contenido -->
+            <div class="about-content">
+                <h2 class="section-title">
+                    <span class="title-small">About</span>
+                    <span class="title-big">Echoes of Beign</span>
+                </h2>
+                
+                <div class="about-text">
+                    <p><strong>Echoes of Beign</strong> is a musical and artistic project conceived as a deep exploration of human emotions, consciousness, and the duality between light and darkness.</p>
+                    
+                    <p>Combining alternative metal, industrial, and atmospheric elements with a conceptual narrative that treats each emotion as a living entity that possesses and transforms the human being.</p>
+                    
+                    <p>This project is not a traditional band, but an <strong>artistic experience</strong> created through artificial intelligence, digital production, and human creative direction.</p>
+                    
+                    <p>Through this fusion, it seeks to question the boundaries between organic and synthetic, emotional and artificial, proposing a new form of <strong>hybrid art</strong> where technology becomes an expressive instrument.</p>
+                </div>
+                
+                <div class="about-links">
+                    <a href="https://open.spotify.com/artist/YOUR_ARTIST_ID" target="_blank" class="social-link">Spotify</a>
+                    <a href="https://www.instagram.com/YOUR_IG" target="_blank" class="social-link">Instagram</a>
+                    <a href="https://bandcamp.com/YOUR_BANDCAMP" target="_blank" class="social-link">Bandcamp</a>
+                </div>
+            </div>
+            
+        </section>
+        
+
+        <!-- ==================== SECCIÓN 4.5: SINGLES ==================== -->
+        <section id="singles" class="fullpage-section singles-section">
+            
+            <!-- Capas parallax -->
+            <div class="parallax-bg layer-1"></div>
+            <div class="parallax-bg layer-2"></div>
+            
+            <!-- Contenido -->
+            <div class="singles-content">
+                <h2 class="section-title">
+                    <span class="title-small">Featured</span>
+                    <span class="title-big">Singles</span>
+                </h2>
+                
+                <div class="singles-grid">
+                    
+                    <div class="single-item">
+                        <div class="single-cover">
+                            <img src="images/singles/solitude.jpg" alt="Solitude - Empty Embrace">
+                            <div class="play-overlay">▶</div>
+                        </div>
+                        <h3>Solitude</h3>
+                        <p class="single-subtitle">Empty Embrace</p>
+                        <div class="single-links">
+                            <a href="https://open.spotify.com/track/YOUR_ID" target="_blank">Spotify</a>
+                            <a href="https://youtube.com/watch?v=YOUR_ID" target="_blank">YouTube</a>
+                        </div>
+                    </div>
+                    
+                    <div class="single-item">
+                        <div class="single-cover">
+                            <img src="images/singles/hate.jpg" alt="Hate - The Poison I Became">
+                            <div class="play-overlay">▶</div>
+                        </div>
+                        <h3>Hate</h3>
+                        <p class="single-subtitle">The Poison I Became</p>
+                        <div class="single-links">
+                            <a href="https://open.spotify.com/track/YOUR_ID" target="_blank">Spotify</a>
+                            <a href="https://youtube.com/watch?v=YOUR_ID" target="_blank">YouTube</a>
+                        </div>
+                    </div>
+                    
+                    <div class="single-item">
+                        <div class="single-cover">
+                            <img src="images/singles/despair.jpg" alt="Despair - The Very Last Echo">
+                            <div class="play-overlay">▶</div>
+                        </div>
+                        <h3>Despair</h3>
+                        <p class="single-subtitle">The Very Last Echo</p>
+                        <div class="single-links">
+                            <a href="https://open.spotify.com/track/YOUR_ID" target="_blank">Spotify</a>
+                            <a href="https://youtube.com/watch?v=YOUR_ID" target="_blank">YouTube</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+        
+        <!-- ==================== SECCIÓN 5: MERCH ==================== -->
+        <section id="merch" class="fullpage-section merch-section">
+            
+            <!-- Capas parallax -->
+            <div class="parallax-bg layer-1"></div>
+            <div class="parallax-bg layer-2"></div>
+            
+            <!-- Contenido -->
+            <div class="merch-content">
+                <h2 class="section-title">
+                    <span class="title-small">Official</span>
+                    <span class="title-big">Merchandise</span>
+                </h2>
+                
+                <div class="merch-grid">
+                    <div class="merch-coming-soon">
+                        <div class="coming-soon-icon">🕳️</div>
+                        <h3>Coming Soon</h3>
+                        <p>Exclusive merchandise from <strong>The Descent</strong> will be available soon.</p>
+                        <p class="coming-soon-small">Limited edition items. Stay tuned.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+        <!-- ==================== FOOTER ==================== -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Echoes of Beign">
+                    </div>
+                    <p class="footer-tagline">Exploring the depths of human emotion through sound</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Listen On</h4>
+                    <div class="footer-links">
+                        <a href="https://soundcloud.com/YOUR_PROFILE" target="_blank">SoundCloud</a>
+                        <a href="https://open.spotify.com/artist/YOUR_ID" target="_blank">Spotify</a>
+                        <a href="https://youtube.com/@YOUR_CHANNEL" target="_blank">YouTube</a>
+                        <a href="https://music.amazon.com/artists/YOUR_ID" target="_blank">Amazon Music</a>
+                        <a href="https://bandcamp.com/YOUR_PROFILE" target="_blank">Bandcamp</a>
+                        <a href="https://deezer.com/artist/YOUR_ID" target="_blank">Deezer</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow</h4>
+                    <div class="footer-links">
+                        <a href="https://instagram.com/YOUR_PROFILE" target="_blank">Instagram</a>
+                        <a href="https://facebook.com/YOUR_PAGE" target="_blank">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Echoes of Beign. All rights reserved.</p>
+                <p class="footer-credit">Created with human vision + AI production</p>
+            </div>
+        </footer>
+        
+    </div>
+    
+    <script src="script-vol.js"></script>
+</body>
+</html>
