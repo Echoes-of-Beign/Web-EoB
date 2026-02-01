@@ -60,7 +60,7 @@ body {
 
 .nav-logo img {
     height: 50px;
-    filter: drop-shadow(0 0 10px rgba(106, 143, 163, 0.3));
+    filter: drop-shadow(0 0 10px rgba(89, 104, 113, 0.3));
 }
 
 .nav-links {
@@ -85,13 +85,13 @@ body {
     left: 0;
     width: 0;
     height: 1px;
-    background: #6a8fa3;
+    background: #596871;
     transition: width 0.3s ease;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    color: #6a8fa3;
+    color: #596871;
 }
 
 .nav-link:hover::after,
@@ -118,11 +118,11 @@ body {
 }
 
 .volume-switch:hover {
-    color: #6a8fa3;
+    color: #596871;
 }
 
 .volume-switch:hover strong {
-    color: #6a8fa3;
+    color: #596871;
 }
 
 /* -------------------- FULLPAGE CONTAINER -------------------- */
@@ -169,11 +169,11 @@ body {
 }
 
 .vol1-theme .parallax-bg.layer-2 {
-    background: radial-gradient(circle at 70% 30%, rgba(106, 143, 163, 0.05) 0%, transparent 60%);
+    background: radial-gradient(circle at 70% 30%, rgba(89, 104, 113, 0.05) 0%, transparent 60%);
 }
 
 .vol1-theme .parallax-bg.layer-3 {
-    background: radial-gradient(circle at 50% 70%, rgba(106, 143, 163, 0.03) 0%, transparent 50%);
+    background: radial-gradient(circle at 50% 70%, rgba(89, 104, 113, 0.03) 0%, transparent 50%);
 }
 
 .vol2-theme .parallax-bg.layer-1 {
@@ -193,6 +193,15 @@ body {
     position: relative;
 }
 
+.hero-background {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.35;
+    z-index: 0;
+}
+
 .album-cover-hero {
     position: absolute;
     left: 10%;
@@ -205,7 +214,7 @@ body {
     width: 400px;
     height: auto;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
-    filter: drop-shadow(0 0 40px rgba(106, 143, 163, 0.2));
+    filter: drop-shadow(0 0 40px rgba(89, 104, 113, 0.2));
 }
 
 .hero-content {
@@ -221,7 +230,7 @@ body {
     font-size: 0.9rem;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    color: #6a8fa3;
+    color: #596871;
     margin-bottom: 1rem;
     opacity: 0.8;
 }
@@ -244,11 +253,11 @@ body {
 
 .title-main {
     display: block;
-    background: linear-gradient(180deg, #6a8fa3 0%, #8b7355 100%);
+    background: linear-gradient(180deg, #596871 0%, #8b7355 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 0 0 60px rgba(106, 143, 163, 0.4);
+    text-shadow: 0 0 60px rgba(89, 104, 113, 0.4);
 }
 
 .vol2-theme .title-main {
@@ -277,20 +286,20 @@ body {
     letter-spacing: 0.15em;
     text-transform: uppercase;
     text-decoration: none;
-    border: 1px solid rgba(106, 143, 163, 0.5);
+    border: 1px solid rgba(89, 104, 113, 0.5);
     transition: all 0.4s ease;
     display: inline-block;
 }
 
 .btn-primary {
-    background: rgba(106, 143, 163, 0.1);
-    color: #6a8fa3;
+    background: rgba(89, 104, 113, 0.1);
+    color: #596871;
 }
 
 .btn-primary:hover {
-    background: rgba(106, 143, 163, 0.2);
-    border-color: #6a8fa3;
-    box-shadow: 0 0 30px rgba(106, 143, 163, 0.3);
+    background: rgba(89, 104, 113, 0.2);
+    border-color: #596871;
+    box-shadow: 0 0 30px rgba(89, 104, 113, 0.3);
 }
 
 .btn-secondary {
@@ -326,7 +335,7 @@ body {
 .scroll-arrow {
     width: 20px;
     height: 30px;
-    border: 2px solid #6a8fa3;
+    border: 2px solid #596871;
     border-radius: 15px;
     margin: 0 auto;
     position: relative;
@@ -340,7 +349,7 @@ body {
     transform: translateX(-50%);
     width: 4px;
     height: 4px;
-    background: #6a8fa3;
+    background: #596871;
     border-radius: 50%;
     animation: scrollDown 2s infinite;
 }
@@ -367,15 +376,40 @@ body {
 
 .concept-visual {
     flex: 0 0 40%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.concept-image {
+    width: min(420px, 100%);
+    aspect-ratio: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(89, 104, 113, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;
+}
+
+.concept-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .visual-element {
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(106, 143, 163, 0.1) 0%, transparent 70%);
-    border: 1px solid rgba(106, 143, 163, 0.3);
+    width: 360px;
+    height: 360px;
+    background: radial-gradient(circle, rgba(89, 104, 113, 0.1) 0%, transparent 70%);
+    border: 1px solid rgba(89, 104, 113, 0.3);
     border-radius: 50%;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .visual-element::before {
@@ -386,7 +420,7 @@ body {
     transform: translate(-50%, -50%);
     width: 80%;
     height: 80%;
-    border: 1px solid rgba(106, 143, 163, 0.2);
+    border: 1px solid rgba(89, 104, 113, 0.2);
     border-radius: 50%;
 }
 
@@ -398,7 +432,7 @@ body {
     transform: translate(-50%, -50%);
     width: 60%;
     height: 60%;
-    border: 1px solid rgba(106, 143, 163, 0.1);
+    border: 1px solid rgba(89, 104, 113, 0.1);
     border-radius: 50%;
 }
 
@@ -416,7 +450,7 @@ body {
     font-size: 1rem;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    color: #6a8fa3;
+    color: #596871;
     margin-bottom: 0.5rem;
     opacity: 0.8;
 }
@@ -426,7 +460,7 @@ body {
     font-size: 4rem;
     font-weight: 500;
     line-height: 1;
-    background: linear-gradient(180deg, #6a8fa3 0%, #8b7355 100%);
+    background: linear-gradient(180deg, #596871 0%, #8b7355 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -449,7 +483,7 @@ body {
 }
 
 .concept-description strong {
-    color: #6a8fa3;
+    color: #596871;
 }
 
 .concept-acts {
@@ -460,14 +494,14 @@ body {
 
 .act {
     padding: 1.5rem;
-    border: 1px solid rgba(106, 143, 163, 0.2);
-    background: rgba(106, 143, 163, 0.03);
+    border: 1px solid rgba(89, 104, 113, 0.2);
+    background: rgba(89, 104, 113, 0.03);
 }
 
 .act h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: #6a8fa3;
+    color: #596871;
 }
 
 .act p {
@@ -508,12 +542,12 @@ body {
 }
 
 .tracklist-container::-webkit-scrollbar-thumb {
-    background: rgba(106, 143, 163, 0.3);
+    background: rgba(89, 104, 113, 0.3);
     border-radius: 4px;
 }
 
 .tracklist-container::-webkit-scrollbar-thumb:hover {
-    background: rgba(106, 143, 163, 0.5);
+    background: rgba(89, 104, 113, 0.5);
 }
 
 .track-item {
@@ -529,8 +563,8 @@ body {
 }
 
 .track-item:hover {
-    background: rgba(106, 143, 163, 0.05);
-    border-color: rgba(106, 143, 163, 0.3);
+    background: rgba(89, 104, 113, 0.05);
+    border-color: rgba(89, 104, 113, 0.3);
     transform: translateX(10px);
 }
 
@@ -542,7 +576,7 @@ body {
     width: 80px;
     height: 80px;
     object-fit: cover;
-    border: 1px solid rgba(106, 143, 163, 0.2);
+    border: 1px solid rgba(89, 104, 113, 0.2);
 }
 
 .track-info {
@@ -555,7 +589,7 @@ body {
 .track-number {
     font-family: 'Cinzel', serif;
     font-size: 1.5rem;
-    color: #6a8fa3;
+    color: #596871;
     font-weight: 500;
     min-width: 50px;
 }
@@ -576,7 +610,7 @@ body {
     flex: 0 0 40px;
     text-align: center;
     font-size: 1.2rem;
-    color: #6a8fa3;
+    color: #596871;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -593,13 +627,40 @@ body {
 .about-content {
     position: relative;
     z-index: 10;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
+    display: grid;
+    grid-template-columns: minmax(260px, 1fr) minmax(320px, 1.2fr);
+    gap: 3rem;
+    align-items: center;
+    text-align: left;
+}
+
+.about-media {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(89, 104, 113, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.about-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-text-block {
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(89, 104, 113, 0.2);
+    padding: 2.5rem;
+    border-radius: 12px;
 }
 
 .about-text {
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 .about-text p {
@@ -610,20 +671,20 @@ body {
 }
 
 .about-text strong {
-    color: #6a8fa3;
+    color: #596871;
 }
 
 .about-links {
     display: flex;
     gap: 2rem;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 3rem;
 }
 
 .social-link {
     padding: 1rem 2rem;
-    border: 1px solid rgba(106, 143, 163, 0.3);
-    color: #6a8fa3;
+    border: 1px solid rgba(89, 104, 113, 0.3);
+    color: #596871;
     text-decoration: none;
     font-size: 0.9rem;
     letter-spacing: 0.1em;
@@ -632,9 +693,9 @@ body {
 }
 
 .social-link:hover {
-    background: rgba(106, 143, 163, 0.1);
-    border-color: #6a8fa3;
-    box-shadow: 0 0 20px rgba(106, 143, 163, 0.2);
+    background: rgba(89, 104, 113, 0.1);
+    border-color: #596871;
+    box-shadow: 0 0 20px rgba(89, 104, 113, 0.2);
 }
 
 /* -------------------- SECCIÓN MERCH -------------------- */
@@ -665,8 +726,8 @@ body {
 }
 
 .merch-item:hover {
-    background: rgba(106, 143, 163, 0.05);
-    border-color: rgba(106, 143, 163, 0.3);
+    background: rgba(89, 104, 113, 0.05);
+    border-color: rgba(89, 104, 113, 0.3);
     transform: translateY(-10px);
 }
 
@@ -675,7 +736,7 @@ body {
     aspect-ratio: 1;
     margin-bottom: 1.5rem;
     overflow: hidden;
-    border: 1px solid rgba(106, 143, 163, 0.2);
+    border: 1px solid rgba(89, 104, 113, 0.2);
 }
 
 .merch-image img {
@@ -697,15 +758,15 @@ body {
 
 .merch-price {
     font-size: 1.1rem;
-    color: #6a8fa3;
+    color: #596871;
     margin-bottom: 1.5rem;
 }
 
 .btn-merch {
     display: inline-block;
     padding: 0.8rem 2rem;
-    border: 1px solid rgba(106, 143, 163, 0.3);
-    color: #6a8fa3;
+    border: 1px solid rgba(89, 104, 113, 0.3);
+    color: #596871;
     text-decoration: none;
     font-size: 0.85rem;
     letter-spacing: 0.1em;
@@ -714,15 +775,15 @@ body {
 }
 
 .btn-merch:hover {
-    background: rgba(106, 143, 163, 0.1);
-    border-color: #6a8fa3;
+    background: rgba(89, 104, 113, 0.1);
+    border-color: #596871;
 }
 
 /* -------------------- FOOTER -------------------- */
 .site-footer {
     background: rgba(0, 0, 0, 0.9);
     padding: 3rem 4rem;
-    border-top: 1px solid rgba(106, 143, 163, 0.2);
+    border-top: 1px solid rgba(89, 104, 113, 0.2);
 }
 
 .footer-content {
@@ -759,7 +820,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: #6a8fa3;
+    color: #596871;
 }
 
 /* -------------------- RESPONSIVE -------------------- */
@@ -778,6 +839,14 @@ body {
     
     .concept-acts {
         grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text-block {
+        padding: 2rem;
     }
     
     .merch-grid {
@@ -821,6 +890,10 @@ body {
     .concept-content {
         flex-direction: column;
     }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
     
     .merch-grid {
         grid-template-columns: 1fr;
@@ -849,15 +922,19 @@ body {
 }
 
 .singles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 3rem;
+    display: flex;
+    gap: 2.5rem;
     margin-top: 3rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
 }
 
 .single-item {
     position: relative;
     transition: transform 0.4s ease;
+    flex: 0 0 320px;
+    scroll-snap-align: start;
 }
 
 .single-item:hover {
@@ -891,7 +968,7 @@ body {
     transform: translate(-50%, -50%);
     width: 60px;
     height: 60px;
-    background: rgba(106, 143, 163, 0.9);
+    background: rgba(89, 104, 113, 0.9);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -912,7 +989,7 @@ body {
     font-size: 1.8rem;
     font-weight: 400;
     margin-bottom: 0.5rem;
-    color: #6a8fa3;
+    color: #596871;
 }
 
 .single-subtitle {
@@ -924,13 +1001,14 @@ body {
 .single-links {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .single-links a {
     padding: 0.5rem 1.5rem;
-    background: rgba(106, 143, 163, 0.1);
-    border: 1px solid rgba(106, 143, 163, 0.3);
-    color: #6a8fa3;
+    background: rgba(89, 104, 113, 0.1);
+    border: 1px solid rgba(89, 104, 113, 0.3);
+    color: #596871;
     text-decoration: none;
     font-size: 0.85rem;
     letter-spacing: 0.05em;
@@ -939,8 +1017,8 @@ body {
 }
 
 .single-links a:hover {
-    background: rgba(106, 143, 163, 0.2);
-    border-color: #6a8fa3;
+    background: rgba(89, 104, 113, 0.2);
+    border-color: #596871;
 }
 
 /* ==================== MERCH COMING SOON ==================== */
@@ -962,7 +1040,7 @@ body {
     font-size: 2.5rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
-    color: #6a8fa3;
+    color: #596871;
 }
 
 .merch-coming-soon p {
@@ -981,7 +1059,7 @@ body {
 .site-footer {
     background: rgba(0, 0, 0, 0.95);
     padding: 4rem 2rem 2rem;
-    border-top: 1px solid rgba(106, 143, 163, 0.2);
+    border-top: 1px solid rgba(89, 104, 113, 0.2);
 }
 
 .footer-content {
@@ -998,7 +1076,7 @@ body {
     font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
-    color: #6a8fa3;
+    color: #596871;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
@@ -1006,13 +1084,44 @@ body {
 .footer-logo img {
     height: 60px;
     margin-bottom: 1rem;
-    filter: drop-shadow(0 0 10px rgba(106, 143, 163, 0.3));
+    filter: drop-shadow(0 0 10px rgba(89, 104, 113, 0.3));
 }
 
 .footer-tagline {
     font-size: 0.95rem;
     color: rgba(255, 255, 255, 0.5);
     line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer-socials a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(89, 104, 113, 0.4);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #596871;
+    transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+    background: rgba(89, 104, 113, 0.2);
+    border-color: #596871;
+    transform: translateY(-2px);
+}
+
+.footer-socials svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
 }
 
 .footer-links {
@@ -1029,7 +1138,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: #6a8fa3;
+    color: #596871;
     padding-left: 0.5rem;
 }
 
@@ -1056,7 +1165,7 @@ body {
 
 @media (max-width: 768px) {
     .singles-grid {
-        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
     
     .footer-content {
